@@ -1,0 +1,8 @@
+baseURL = 'https://about.dfkdream.dev/'
+languageCode = 'ko-KR'
+title = 'About dfkdream'
+
+disableKinds = ["taxonomy"]
+
+[markup.goldmark.renderer]
+unsafe = true

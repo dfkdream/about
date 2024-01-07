@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "4bfb66f584723e29",
+    "type": "split",
+    "children": [
+      {
+        "id": "826c6dbf95df6e90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5212e87117c93ded",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8c74755db6453c80",
+    "type": "split",
+    "children": [
+      {
+        "id": "5651bedc806240a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48f6b8e3bc0ce84d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6513e8e8c3f8e541",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#WebSocket",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dc4ccc9b839f50d3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e2234d6af669cf61",
+    "type": "split",
+    "children": [
+      {
+        "id": "73e791c5a9f0536a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e3b75777a1af396",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "445eb163442a07aa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1f07f9726b76d748",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "df796350b4b4d034",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "5212e87117c93ded",
+  "lastOpenFiles": [
+    "portfolio.md",
+    "_index.md",
+    "portfolio",
+    "content/resume.md",
+    "content/portfolio.md",
+    "themes",
+    "static",
+    "layouts",
+    "i18n",
+    "data",
+    "content",
+    "assets",
+    "archetypes/default.md",
+    "archetypes",
+    "hugo.toml"
+  ]
+}

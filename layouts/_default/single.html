@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .Site.Title }}</title>
+    {{ with resources.Get "css/index.scss" | toCSS -}}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" />
+    {{- end }}
+</head>
+
+<body>
+    <article>
+        <div class="print-only qr">
+            <div id="qr"></div>
+            <a id="qr-link" href="https://about.dfkdream.dev">about.dfkdream.dev</a>
+        </div>
+        {{ partial "replace-hashtags" . }}
+    </article>
+
+    {{ with resources.Get "js/qrcode.min.js" -}}
+    <script src="{{ .RelPermalink }}"></script>
+    {{- end }}
+    <script>
+        new QRCode(document.getElementById("qr"), location.href);
+        document.getElementById("qr-link").href = location.href;
+    </script>
+</body>

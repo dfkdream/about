@@ -1,0 +1,65 @@
+@import 'reset.scss';
+@import 'vars.scss';
+
+body{
+    max-width: 800px;
+    margin: auto;
+}
+
+a{
+    color: #00aeff;
+}
+
+article{
+    margin: 2em;
+    position: relative;
+
+    h1{
+        margin: 1em 0 0.5em 0;
+    }
+
+    h2{
+        margin: 0.5em 0 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    ul{
+        padding: 0 1em;
+    }
+
+    hr{
+        margin: 1em 0;
+    }
+
+    span.hashtag{
+        padding: 0.1em 0.5em;
+        border-radius: 1em;
+        background: #ecddff;
+        color: #9b49ff;
+        print-color-adjust: exact !important;
+    }
+}
+
+.print-only{
+    display: none;
+}
+
+@media print{
+    .print-only{
+        display: initial;
+    }
+
+    .qr{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        a{
+            font-size: 0.6em;
+            text-align: center;
+            display: block;
+        }
+    }
+}
