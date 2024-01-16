@@ -1,6 +1,6 @@
 function findHeader(node){
     for (node = node.parentNode; node && !node.nodeName.startsWith("H"); node = node.previousSibling);
-    console.log(node);
+    return node;
 }
 
 function toggleHeader(node, hidden){
@@ -11,5 +11,23 @@ function toggleHeader(node, hidden){
 }
 
 function getTags(){
-    return new Map([...document.querySelectorAll("span.hashtag")].map(elem=>elem.dataset.value));
+    return new Set([...document.querySelectorAll("span.hashtag")].map(elem=>elem.dataset.value));
+}
+
+function buildTagDatabase(){
+	let result = new Map();
+	getTags().forEach(tag=>{result.set(tag, [])});
+	
+	[...document.querySelectorAll("span.hashtag")].forEach(node=>{
+		result.get(node.dataset.value).push(findHeader(node));		
+	});
+
+	console.log(result);
+	return result;
+}
+
+function toggleHeaderByTag(tagDatabase, tag, hidden){
+	tagDatabase.get(tag).forEach(node=>{
+		toggleHeader(node, hidden);
+	});
 }
