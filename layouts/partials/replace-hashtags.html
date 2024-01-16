@@ -1,7 +1,7 @@
 {{- $.Scratch.Add "content" .RawContent -}}
 
 {{- range .Content | findRESubmatch "#([\\w\\+\\-가-힣]+)" -}}
-    {{- $tag := printf `<span class="hashtag" data-value="%s">%s</span>` (index . 1) (index . 1) -}}
+    {{- $tag := printf `<span role="button" class="hashtag" data-value="%s" tabindex="0">%s</span>` (index . 1) (index . 1) -}}
     {{- $.Scratch.Set "content" (replace ($.Scratch.Get "content") (index . 0) $tag 1) -}}
 {{- end -}}
 
