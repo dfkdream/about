@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>{{ .Site.Title }}</title>
-    {{ with resources.Get "css/index.scss" | toCSS -}}
-    <link rel="stylesheet" href="{{ .RelPermalink }}" />
+    {{ with resources.Get "css/index.scss" | toCSS | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"/>
     {{- end }}
 </head>
 
@@ -14,14 +14,25 @@
             <div id="qr"></div>
             <a id="qr-link" href="https://about.dfkdream.dev">about.dfkdream.dev</a>
         </div>
-        {{ partial "replace-hashtags" . }}
+        {{ if .Params.process_hashtags -}}
+            {{ partial "replace-hashtags" . }}
+        {{- else -}}
+            {{ .Content }}
+        {{- end }}
     </article>
 
-    {{ with resources.Get "js/qrcode.min.js" -}}
-    <script src="{{ .RelPermalink }}"></script>
+    {{ with resources.Get "js/qrcode.min.js" | fingerprint -}}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
     {{- end }}
+
     <script>
         new QRCode(document.getElementById("qr"), location.href);
         document.getElementById("qr-link").href = location.href;
     </script>
+
+    {{ if .Params.process_hashtags -}}
+        {{- with resources.Get "js/filter-hashtags.js" | minify | fingerprint -}}
+        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+        {{- end -}}
+    {{- end }}
 </body>

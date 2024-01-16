@@ -1,11 +1,8 @@
-{{ $.Scratch.Add "content" .RawContent }}
+{{- $.Scratch.Add "content" .RawContent -}}
 
-<ul>
-{{ range .Content | findRESubmatch "#([\\w\\+\\-가-힣]+)" }}
-    {{ $tag := printf `<span class="hashtag" data-value="%s">%s</span>` (index . 1) (index . 1) }}
-    {{ $.Scratch.Set "content" (replace ($.Scratch.Get "content") (index . 0) $tag 1) }}
-{{ end }}
+{{- range .Content | findRESubmatch "#([\\w\\+\\-가-힣]+)" -}}
+    {{- $tag := printf `<span class="hashtag" data-value="%s">%s</span>` (index . 1) (index . 1) -}}
+    {{- $.Scratch.Set "content" (replace ($.Scratch.Get "content") (index . 0) $tag 1) -}}
+{{- end -}}
 
-</ul>
-
-{{ $.Scratch.Get "content" | markdownify }}
+{{- $.Scratch.Get "content" | markdownify -}}

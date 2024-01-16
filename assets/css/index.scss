@@ -30,13 +30,44 @@ article{
     hr{
         margin: 1em 0;
     }
+}
 
-    span.hashtag{
-        padding: 0.1em 0.5em;
-        border-radius: 1em;
+.hashtag{
+    padding: 0.1em 0.5em;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    transition: border-color 0.2s;
+    background: #ecddff;
+    color: #8420ff;
+    print-color-adjust: exact !important;
+    cursor: pointer;
+}
+
+.hashtag:hover{
+    border: 1px solid #8420ff !important;
+}
+
+#filter-by-hashtag{
+
+    input.hashtag{
+        //display:none;
+        position: absolute;
+        clip: rect(0,0,0,0);
+        pointer-events: none;
+    }
+
+    .hashtag{
+        background: #f9f5ff;
+        border: 1px solid #ecddff;
+    }
+
+    input.hashtag:checked + label.hashtag{
         background: #ecddff;
-        color: #9b49ff;
-        print-color-adjust: exact !important;
+        color: #8420ff;
+    }
+
+    input.hashtag:focus-visible + label.hashtag{
+        border: 1px solid #8420ff;
     }
 }
 
@@ -47,6 +78,10 @@ article{
 @media print{
     .print-only{
         display: initial;
+    }
+
+    .screen-only{
+        display: none;
     }
 
     .qr{

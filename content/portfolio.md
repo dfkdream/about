@@ -1,3 +1,7 @@
+---
+process_hashtags: "true"
+---
+
 # 김주형 (Kim Juhyung)
 
 Email: dfkdream@gmail.com
@@ -11,6 +15,7 @@ Blog: https://blog.dfkdream.dev
 Resume: https://about.dfkdream.dev
 
 ---
+{{< filter-by-hashtags >}}
 # 팀 프로젝트
 ## Easy Do Track
 사용 기술: #Go #WebSocket #UDP #C #CMake 
