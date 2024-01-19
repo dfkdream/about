@@ -3,6 +3,7 @@ MIT License
 
 Copyright (c) 2020 nanxiaobei and adityatelange
 Copyright (c) 2021-2024 adityatelange
+Copyright (c) 2024 dfkdream
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -40,6 +41,12 @@ SOFTWARE.
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+    --link: #006dff;
+    --hashtag: #8321fb;
+    --hashtag-bg: #ecddff;
+    --hashtag-selected: #ecddff;
+    --hashtag-selected-bg: #8321fb;
+    --hashtag-hover-border: #8321fb;
 }
 
 .dark {

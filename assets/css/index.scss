@@ -7,7 +7,7 @@ body{
 }
 
 a{
-    color: #006dff;
+    color: var(--link);
 }
 
 article{
@@ -37,14 +37,14 @@ article{
     border-radius: 1em;
     border: 1px solid transparent;
     transition: border-color 0.2s;
-    background: #ecddff;
-    color: #8321fb;
+    background: var(--hashtag-bg);
+    color: var(--hashtag);
     print-color-adjust: exact !important;
     cursor: pointer;
 }
 
 .hashtag:hover{
-    border: 1px solid #8321fb !important;
+    border: 1px solid var(--hashtag-hover-border) !important;
 }
 
 #filter-by-hashtag{
@@ -55,17 +55,13 @@ article{
         pointer-events: none;
     }
 
-    .hashtag{
-        background: #ecddff;
-    }
-
     input.hashtag:checked + label.hashtag{
-        background: #8321fb;
-        color: #ecddff;
+        background: var(--hashtag-selected-bg);
+        color: var(--hashtag-selected);
     }
 
     input.hashtag:focus-visible + label.hashtag{
-        border: 1px solid #8321fb;
+        border: 1px solid var(--hashtag-hover-border);
     }
 }
 
