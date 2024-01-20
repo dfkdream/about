@@ -33,7 +33,9 @@ article{
 }
 
 .hashtag{
-    padding: 0.1em 0.5em;
+    display: inline-block;
+    line-height: 1;
+    padding: 0.16em 0.5em;
     border-radius: 1em;
     border: 1px solid transparent;
     transition: border-color 0.2s;
