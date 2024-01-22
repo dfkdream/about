@@ -10,6 +10,23 @@
 </head>
 
 <body class="adaptive">
+	<aside class="sidebar">
+		<button id="toggle-options" name="toggle options" class="screen-only hamburger open"></button>
+		<form id="options">
+			<label for="theme">Theme</label>
+			<select name="theme" id="theme">
+				<option value="adaptive">Adaptive</option>
+				<option value="">Light</option>
+				<option value="dark">Dark</option>
+			</select>
+			<label for="font">Font</label>
+			<select name="font" id="font">
+				<option value="">Sans Serif</option>
+				<option value="serif">Serif</option>
+			</select>
+		</form>
+	</aside>
+
     <article>
         <div class="print-only qr">
             <div id="qr"></div>
