@@ -2,7 +2,7 @@
 
 Email: dfkdream@gmail.com
 
-Cell: 여기에 연락처 입력
+Cell: <span contenteditable>여기에 연락처 입력</span>
 
 LinkedIn: https://www.linkedin.com/in/dfkdream
 
