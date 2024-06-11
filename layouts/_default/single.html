@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>{{ .Site.Title }}</title>
+    <link rel="icon" href="https://icons.dfkdream.dev/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{ with resources.Get "css/index.scss" | toCSS | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"/>
