@@ -20,9 +20,8 @@ Portfolio: https://about.dfkdream.dev/portfolio
 
 ---
 # 학력
-* 금오공과대학교 컴퓨터공학과
-	* 2018.03 ~ 재학 중
-	* 2024.02 학사 졸업 예정
+* 금오공과대학교 컴퓨터공학 학사
+	* 2018.03 ~ 2024.02
 # 활동
 * 2023.11 KIT Engineering Fair 참여 
 	* 팀명: 이지 두 트랙
